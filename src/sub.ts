@@ -8,12 +8,15 @@ import { AnyJson } from "./convert/type";
 import {
   parseSubHeaders,
   getSubContent,
+} from "./subShared";
+import type {
   SubHeaders,
   CachedSubContent,
 } from "./subShared";
 
 // Re-export shared types and functions for backward compatibility
-export { parseSubHeaders, getSubContent, SubHeaders, CachedSubContent };
+export { parseSubHeaders, getSubContent };
+export type { SubHeaders, CachedSubContent };
 
 /**
  * Token 配置的 metadata
